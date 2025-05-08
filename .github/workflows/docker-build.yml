@@ -2,8 +2,8 @@ name: Build and Push Docker Image
 
 on:
   push:
-    branches: [ main ]
-
+    branches:
+      - main  
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -21,4 +21,4 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           push: true
-          tags: polindra/myapp:latest
+          tags: imam1357/myapp:latest  
